@@ -248,6 +248,11 @@ class SystemControl(WebOSControlBase):
             "uri": "ssap://com.webos.service.update/getCurrentSWInformation",
             "validation": standard_validation,
         },
+         "picture": {
+            "uri": "ssap://settings/getSystemSettings",
+            "payload": {"category": "picture", "keys": ["backlight"]}
+            # "validation": standard_validation,
+        },
         "notify": {
             "uri": "ssap://system.notifications/createToast",
             "args": [str],
