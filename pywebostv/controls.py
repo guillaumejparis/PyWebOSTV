@@ -1,6 +1,5 @@
 try:
-    # begin try for python <= 3.5
-    from collections import Callable
+    from collections.abc import Callable
 except ImportError:
     # after try for python >= 3.10
     from typing import Callable
